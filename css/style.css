@@ -1,0 +1,140 @@
+
+/* body */
+
+:root {
+    --background: #1e0052 ;
+    --secondaryBackground: #410f6f;
+    --text: #f8f6ff;
+    --purple: #8f82ff;
+    --teal: #24ecfe;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    height: 100vh;
+    width: 100%;
+}
+    /* display: flex;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto 0 auto;
+    max-width: 428px;
+}
+
+/* first Part */
+
+.statement{
+    padding: 35px;
+    border-radius: 20px;
+    border: 2px solid var(--purple);
+    box-shadow: 1px 1px 21px 9px #2e276d;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+
+
+/* Second part */
+
+.todoHead{
+    margin-top: 20px;
+    width: 420px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid var(--purple);
+    box-shadow: 1px 1px 21px 9px #2e276d;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.todoHead .headInput {
+ width: 420px;
+ padding: 10px;
+ border: none;
+ outline: none;
+ background: transparent;
+ color: var(--text);
+ font-size: 18px;
+ font-weight: 500;
+
+}
+
+.todoHead button{
+    width: 70px;
+    border: none;
+    border-radius: 8px;
+    background: var(--purple);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--background);
+}
+
+.todoHead button:active{
+    transform: scale(1.2);
+    /* border: 5px solid var(--purple); */
+    border-radius: 8px;
+}
+
+.single_todo {
+    width: 420px;
+    padding: 5px;
+    margin: 20px 2px;
+    display: flex;
+    gap: 5px;
+
+    border-radius: 15px;
+    border: 2px solid var(--purple);
+    box-shadow: 1px 1px 21px 9px #2e276d;
+}
+
+.single_todo input {
+    width: 390px;
+    
+   
+    font-size: 20px;
+    font-weight: 500px;
+    color: var(--text);
+    outline: none;
+    background: transparent;
+    border: none;
+
+}
+
+.single_todo button{
+    width: 60px;
+    padding: 10px;
+    gap: 10px;
+    border: none;
+    border-radius: 8px;
+    background: var(--purple);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--background);
+}
+
+.single_todo button:active {
+    transform: scale(1.1);
+}
+
+.single_todo .Edit{
+    background-color: #6c5cff;
+}
+
+
+/* third section */
